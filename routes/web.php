@@ -16,3 +16,6 @@ use Illuminate\Support\Facades\Route;
 Route::get('/', function () {
     return view('welcome');
 });
+
+
+Route::get('editStudent/{id}', [StudentController::class, 'editStudent'])->name('student.editstudent');
